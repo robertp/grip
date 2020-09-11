@@ -13,7 +13,7 @@ jobs:
           This is a message, and you'll get it when you submit an issue for the first time!
           Your name is ${{ github.actor }}!
         
-          This repo is ${{ github.repository }}!\n        
+          This repo is ${{ github.repository }}!        
         
           Stay cool! And find our [contribution guidelines here](https://github.com/anchore/anchore-engine/blob/master/CONTRIBUTING.rst)!
         pr-message: 'Message that will be displayed on users'' first pr'
