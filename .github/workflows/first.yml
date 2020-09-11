@@ -11,5 +11,5 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: |-
           This is a message, and you'll get it when you submit an issue for the first time!
-          Your name is $GITHUB_ACTOR! This repo is $GITHUB_REPOSITORY! Cool!
+          Your name is ${{ GITHUB_ACTOR }}! This repo is ${{ GITHUB_REPOSITORY }}! Cool!
         pr-message: 'Message that will be displayed on users'' first pr'
