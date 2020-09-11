@@ -9,7 +9,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: |-
-          This is a message, and you'll get it when you submit an issue for the first time!
-          Your name is ${{ GITHUB_ACTOR }}! This repo is ${{ GITHUB_REPOSITORY }}! Cool!
+        issue-message: This is a message, and you'll get it when you submit an issue for the first time! Your name is ${{ github.actor }}! This repo is ${{ github.repository }}! Cool!
         pr-message: 'Message that will be displayed on users'' first pr'
