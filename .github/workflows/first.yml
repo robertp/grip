@@ -1,6 +1,6 @@
 name: Greetings
 
-on: [pull_request_target, issues]
+on: [issues]
 
 jobs:
   greeting:
@@ -10,10 +10,12 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: |-
-          This is a message, and you'll get it when you submit an issue for the first time!
-          Your name is ${{ github.actor }}!
-        
-          This repo is ${{ github.repository }}!        
-        
-          Stay cool! And find our [contribution guidelines here](https://github.com/anchore/anchore-engine/blob/master/CONTRIBUTING.rst)!
-        pr-message: 'Message that will be displayed on users'' first pr'
+          Hello ${{ github.actor }},
+
+          Thank you for being part of the Anchore Engine community!
+
+          ![Thank you](https://github.com/robertp/grip/raw/master/docs/keanu-thank-you.gif)
+
+          An Anchorite will look at your issue soon. We also have great [documentation](https://docs.anchore.com/current/), including [FAQs](https://docs.anchore.com/current/docs/faq/) and [release notes](https://docs.anchore.com/current/docs/releasenotes/).
+
+          You can also find our [contribution guidelines here](https://github.com/anchore/anchore-engine/blob/master/CONTRIBUTING.rst). Thank you again!
